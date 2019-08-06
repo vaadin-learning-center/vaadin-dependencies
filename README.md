@@ -7,6 +7,57 @@
 This project is a minimized version of 
 [https://github.com/RapidPM/rapidpm-dependencies](https://github.com/RapidPM/rapidpm-dependencies)
 
+## How to use
+The dependency is distributed via 
+jitpack [https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/](https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/)
+
+Add first to repository coordinates to your **pom.xml**
+
+```xml
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+```
+
+After this you can add the **parent**. 
+This project supports all LTS versions up from Vaadin8 and the current version.
+
+### V8 (LTS)
+```xml
+  <parent>
+    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <artifactId>vaadin-dependencies-v08</artifactId>
+    <version>XXXX</version>
+  </parent>
+```
+### V10 (LTS)
+```xml
+  <parent>
+    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <artifactId>vaadin-dependencies-v10</artifactId>
+    <version>XXXX</version>
+  </parent>
+```
+### V14 (LTS)
+```xml
+  <parent>
+    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <artifactId>vaadin-dependencies-v14</artifactId>
+    <version>XXXX</version>
+  </parent>
+```
+### Current 
+```xml
+  <parent>
+    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <artifactId>vaadin-dependencies-vXX</artifactId>
+    <version>XXXX</version>
+  </parent>
+```
+
 ## Versioninfos
 
 ### NEXT

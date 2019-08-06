@@ -23,10 +23,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.vaadin</groupId>
-  <artifactId>vaadin-dependencies-parent</artifactId>
+  <artifactId>vaadin-dependencies</artifactId>
   <packaging>pom</packaging>
 
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <inceptionYear>2019</inceptionYear>
   <organization>
