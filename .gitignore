@@ -1,3 +1,11 @@
+node/
+node_modules/
+package.json
+package-lock.json
+webpack.config.js
+webpack.generated.js
+
+
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
