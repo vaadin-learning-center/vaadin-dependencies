@@ -1,5 +1,12 @@
 #Parent POM for Vaadin Tutorials
 
+## Current state
+[![](https://jitpack.io/v/vaadin-learning-center/vaadin-dependencies.svg)](https://jitpack.io/#vaadin-learning-center/vaadin-dependencies)
+[![](https://jitci.com/gh/vaadin-learning-center/vaadin-dependencies/svg)](https://jitci.com/gh/vaadin-learning-center/vaadin-dependencies)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
+
 
 ## Info
 **Project is build/tested with svenruppert/maven-3.6.1-adopt:1.8.212-04 docker image !!**
