@@ -68,6 +68,9 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### NEXT
 * TBD
 
+### 1.0.5
+* added Testcontainers (core and selenium) to the scope **test**
+
 ### 1.0.4
 * added nano-jetty module
 * update to V14RC9

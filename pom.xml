@@ -26,7 +26,9 @@
   <artifactId>vaadin-dependencies</artifactId>
   <packaging>pom</packaging>
 
-  <version>1.0.4</version>
+  <!--  development version ongoing, for releases see github/jitpack-->
+  <!--  https://github.com/vaadin-learning-center/vaadin-dependencies/releases-->
+  <version>0.0.0-SNAPSHOT</version>
 
   <inceptionYear>2019</inceptionYear>
   <organization>
@@ -129,6 +131,11 @@
 
     <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
     <webdriverextensions.version>3.2.0</webdriverextensions.version>
+
+    <!-- APM with stagemonitor -->
+    <stagemonitor.version>0.88.9</stagemonitor.version>
+    <opentracing-api.version>0.31.0</opentracing-api.version>
+    <byte-buddy.version>1.8.11</byte-buddy.version>
 
   </properties>
   <repositories>
@@ -564,6 +571,24 @@
     <dependency>
       <groupId>net.jcip</groupId>
       <artifactId>jcip-annotations</artifactId>
+    </dependency>
+
+<!--    Testbench Testing inside Docker-->
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>testcontainers</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>selenium</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <version>3.141.59</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
