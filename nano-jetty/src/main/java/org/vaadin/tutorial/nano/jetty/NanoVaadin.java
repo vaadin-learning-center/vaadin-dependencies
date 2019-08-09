@@ -31,6 +31,8 @@ public class NanoVaadin {
   private NanoVaadin() {
   }
 
+  public static final String APM = "apm";
+
   public static final String CLI_HOST = "host";
   public static final String CLI_PORT = "port";
 
@@ -39,6 +41,7 @@ public class NanoVaadin {
     final Options options = new Options();
     options.addOption(CLI_HOST, true, "host to use");
     options.addOption(CLI_PORT, true, "port to use");
+    options.addOption(APM, false, "activate APM on");
 
     DefaultParser parser = new DefaultParser();
     CommandLine   cmd    = parser.parse(options, args);
@@ -47,10 +50,9 @@ public class NanoVaadin {
       setProperty(CoreUIService.CORE_UI_SERVER_HOST, cmd.getOptionValue(CLI_HOST));
     } if (cmd.hasOption(CLI_PORT)) {
       setProperty(CoreUIService.CORE_UI_SERVER_PORT, cmd.getOptionValue(CLI_PORT));
+    } if(cmd.hasOption(APM)){
+      Stagemonitor.init();
     }
-
-    Stagemonitor.init();
-
     new CoreUIService().startup();
   }
 }

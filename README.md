@@ -70,6 +70,8 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 
 ### 1.0.5
 * added Testcontainers (core and selenium) to the scope **test**
+* added testbench as dependency for scope **test**
+* param for NanoVaadin --apm (to activate Application Performance Monitoring)
 
 ### 1.0.4
 * added nano-jetty module
