@@ -6,8 +6,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-
-
 ## Info
 **Project is build/tested with svenruppert/maven-3.6.1-adopt:1.8.212-04 docker image !!**
 
@@ -69,6 +67,11 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 
 ### NEXT
 * TBD
+
+### 1.0.4
+* added nano-jetty module
+* update to V14RC9
+
 
 ### 1.0.0
 initial release

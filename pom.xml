@@ -26,7 +26,7 @@
   <artifactId>vaadin-dependencies</artifactId>
   <packaging>pom</packaging>
 
-  <version>1.0.3</version>
+  <version>1.0.4</version>
 
   <inceptionYear>2019</inceptionYear>
   <organization>
@@ -487,12 +487,12 @@
 
   <modules>
     <module>core</module>
+    <module>nano-jetty</module>
     <module>vaadin-v08</module>
     <module>vaadin-v10</module>
     <module>vaadin-v14</module>
     <module>vaadin-vXX</module>
   </modules>
-
 
   <dependencies>
     <dependency>
