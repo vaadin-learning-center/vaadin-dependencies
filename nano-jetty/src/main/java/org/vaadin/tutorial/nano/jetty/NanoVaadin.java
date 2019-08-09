@@ -19,7 +19,6 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.stagemonitor.core.Stagemonitor;
 
 import static java.lang.System.setProperty;
 
@@ -51,7 +50,7 @@ public class NanoVaadin {
     } if (cmd.hasOption(CLI_PORT)) {
       setProperty(CoreUIService.CORE_UI_SERVER_PORT, cmd.getOptionValue(CLI_PORT));
     } if(cmd.hasOption(APM)){
-      Stagemonitor.init();
+      //Stagemonitor.init();
     }
     new CoreUIService().startup();
   }

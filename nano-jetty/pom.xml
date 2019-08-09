@@ -63,29 +63,27 @@
       <artifactId>slf4j-simple</artifactId>
     </dependency>
 
-    <!--    APM Stagemonitor Start -->
-    <dependency>
-      <groupId>org.stagemonitor</groupId>
-      <artifactId>stagemonitor-web-servlet</artifactId>
-      <version>${stagemonitor.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.stagemonitor</groupId>
-      <artifactId>stagemonitor-tracing</artifactId>
-      <version>${stagemonitor.version}</version>
-    </dependency>
+<!--    &lt;!&ndash;    APM Stagemonitor Start &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.stagemonitor</groupId>-->
+<!--      <artifactId>stagemonitor-web-servlet</artifactId>-->
+<!--      <version>${stagemonitor.version}</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.stagemonitor</groupId>-->
+<!--      <artifactId>stagemonitor-tracing</artifactId>-->
+<!--      <version>${stagemonitor.version}</version>-->
+<!--    </dependency>-->
     <!--    <dependency>-->
     <!--      <groupId>org.stagemonitor</groupId>-->
     <!--      <artifactId>stagemonitor-tracing-zipkin</artifactId>-->
     <!--      <version>${stagemonitor.version}</version>-->
     <!--    </dependency>-->
-
-
-    <dependency>
-      <groupId>net.bytebuddy</groupId>
-      <artifactId>byte-buddy</artifactId>
-      <version>${byte-buddy.version}</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>net.bytebuddy</groupId>-->
+<!--      <artifactId>byte-buddy</artifactId>-->
+<!--      <version>${byte-buddy.version}</version>-->
+<!--    </dependency>-->
     <!--    APM Stagemonitor End -->
 
 
