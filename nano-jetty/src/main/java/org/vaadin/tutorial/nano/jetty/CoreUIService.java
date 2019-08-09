@@ -43,17 +43,17 @@ public class CoreUIService
 
   public void startup() {
     try {
-      Server server = initServer();
+      initServer();
 
-      server.start();
-      server.join();
-      jetty = Result.success(server);
+      jetty.get().start();
+      jetty.get().join();
+//      jetty = Result.success(server);
     } catch (Exception e) {
       logger().warning(e.getLocalizedMessage());
     }
   }
 
-  public Server initServer() {
+  public void initServer() {
     WebAppContext context = new WebAppContext();
     context.setLogUrlOnStart(true);
     context.setConfigurationDiscovered(true);
@@ -70,6 +70,6 @@ public class CoreUIService
 
     Server server = new Server(Integer.parseInt(getProperty(CORE_UI_SERVER_PORT, CORE_UI_SERVER_PORT_DEFAULT)));
     server.setHandler(context);
-    return server;
+    jetty = Result.success(server);
   }
 }
