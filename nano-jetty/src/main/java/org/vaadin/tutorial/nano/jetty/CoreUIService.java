@@ -43,22 +43,7 @@ public class CoreUIService
 
   public void startup() {
     try {
-      WebAppContext context = new WebAppContext();
-      context.setLogUrlOnStart(true);
-      context.setConfigurationDiscovered(true);
-      context.setConfigurations(new Configuration[]{
-          new AnnotationConfiguration(), new WebInfConfiguration(), new WebXmlConfiguration(),
-          new MetaInfConfiguration()
-      });
-
-      context.setContextPath("/");
-      Resource classPathResource = Resource.newClassPathResource("/META-INF/resources", true, true);
-      context.setBaseResource(classPathResource);
-      context.setAllowNullPathInfo(true);
-      context.setAttribute(JAR_PATTERN, ".*");
-
-      Server server = new Server(Integer.parseInt(getProperty(CORE_UI_SERVER_PORT, CORE_UI_SERVER_PORT_DEFAULT)));
-      server.setHandler(context);
+      Server server = initServer();
 
       server.start();
       server.join();
@@ -66,5 +51,25 @@ public class CoreUIService
     } catch (Exception e) {
       logger().warning(e.getLocalizedMessage());
     }
+  }
+
+  public Server initServer() {
+    WebAppContext context = new WebAppContext();
+    context.setLogUrlOnStart(true);
+    context.setConfigurationDiscovered(true);
+    context.setConfigurations(new Configuration[]{
+        new AnnotationConfiguration(), new WebInfConfiguration(), new WebXmlConfiguration(),
+        new MetaInfConfiguration()
+    });
+
+    context.setContextPath("/");
+    Resource classPathResource = Resource.newClassPathResource("/META-INF/resources", true, true);
+    context.setBaseResource(classPathResource);
+    context.setAllowNullPathInfo(true);
+    context.setAttribute(JAR_PATTERN, ".*");
+
+    Server server = new Server(Integer.parseInt(getProperty(CORE_UI_SERVER_PORT, CORE_UI_SERVER_PORT_DEFAULT)));
+    server.setHandler(context);
+    return server;
   }
 }
