@@ -52,6 +52,6 @@ public class NanoVaadin {
     } if(cmd.hasOption(APM)){
       //Stagemonitor.init();
     }
-    new CoreUIService().startup();
+    new CoreUIService().startupAndBlock();
   }
 }

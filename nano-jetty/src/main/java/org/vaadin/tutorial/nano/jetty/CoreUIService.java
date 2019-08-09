@@ -41,25 +41,37 @@ public class CoreUIService
 
   public Result<Server> jetty = failure("not initialised so far");
 
-  public void startup() {
+  public void startupAndBlock() {
     try {
-      initServer();
-
-      jetty.get().start();
-      jetty.get().join();
+      startup();
+      jetty.get()
+           .join();
 //      jetty = Result.success(server);
     } catch (Exception e) {
       logger().warning(e.getLocalizedMessage());
     }
   }
 
+  public void startup() {
+    initServer();
+    try {
+      jetty.get()
+           .start();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * This will init the Server instance only
+   */
+
   public void initServer() {
     WebAppContext context = new WebAppContext();
     context.setLogUrlOnStart(true);
     context.setConfigurationDiscovered(true);
     context.setConfigurations(new Configuration[]{
-        new AnnotationConfiguration(), new WebInfConfiguration(), new WebXmlConfiguration(),
-        new MetaInfConfiguration()
+        new AnnotationConfiguration(), new WebInfConfiguration(), new WebXmlConfiguration(), new MetaInfConfiguration()
     });
 
     context.setContextPath("/");
