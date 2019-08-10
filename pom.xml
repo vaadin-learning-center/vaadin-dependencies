@@ -186,6 +186,26 @@
   <dependencyManagement>
     <!--project versions-->
     <dependencies>
+
+<!--      Project modules-->
+      <dependency>
+        <groupId>org.vaadin</groupId>
+        <artifactId>vaadin-dependencies-core</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.vaadin</groupId>
+        <artifactId>vaadin-dependencies-nano-jetty</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.vaadin</groupId>
+        <artifactId>vaadin-dependencies-nano-jetty-junit5</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+      </dependency>
+
+
+
       <!--API´s-->
       <dependency>
         <groupId>javax.annotation</groupId>
@@ -495,6 +515,7 @@
   <modules>
     <module>core</module>
     <module>nano-jetty</module>
+    <module>nano-jetty-junit5</module>
     <module>vaadin-v08</module>
     <module>vaadin-v10</module>
     <module>vaadin-v14</module>

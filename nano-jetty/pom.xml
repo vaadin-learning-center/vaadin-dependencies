@@ -23,6 +23,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.vaadin</groupId>
+      <artifactId>vaadin-dependencies-core</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
     </dependency>
