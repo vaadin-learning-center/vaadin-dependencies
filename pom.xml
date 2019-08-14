@@ -95,7 +95,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <slf4j.version>1.7.26</slf4j.version>
-    <log4j-api.version>2.12.0</log4j-api.version>
+    <log4j-api.version>2.12.1</log4j-api.version>
 
     <jacoco.version>0.8.4</jacoco.version>
     <pitest.version>1.4.9</pitest.version>
@@ -133,9 +133,9 @@
     <webdriverextensions.version>3.2.0</webdriverextensions.version>
 
     <!-- APM with stagemonitor -->
-    <stagemonitor.version>0.88.9</stagemonitor.version>
-    <opentracing-api.version>0.31.0</opentracing-api.version>
-    <byte-buddy.version>1.8.11</byte-buddy.version>
+    <stagemonitor.version>0.89.0</stagemonitor.version>
+    <opentracing-api.version>0.33.0</opentracing-api.version>
+    <byte-buddy.version>1.10.0</byte-buddy.version>
 
   </properties>
   <repositories>
@@ -308,7 +308,7 @@
       <dependency>
         <groupId>org.cache2k</groupId>
         <artifactId>cache2k-base-bom</artifactId>
-        <version>1.2.2.Final</version>
+        <version>1.2.3.Final</version>
         <type>pom</type>
       </dependency>
       <dependency>
