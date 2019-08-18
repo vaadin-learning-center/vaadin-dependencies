@@ -68,6 +68,9 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### NEXT
 * TBD
 
+### 1.0.6
+* added java-faker to scope test
+
 ### 1.0.5
 * added Testcontainers (core and selenium) to the scope **test**
 * added testbench as dependency for scope **test**

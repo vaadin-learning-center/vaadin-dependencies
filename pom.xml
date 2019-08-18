@@ -435,6 +435,15 @@
         <scope>test</scope>
       </dependency>
 
+
+      <dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>1.0.0</version>
+        <scope>test</scope>
+      </dependency>
+
+
       <!--benchmarking gatlin-->
       <dependency>
         <groupId>io.gatling.highcharts</groupId>
@@ -567,6 +576,13 @@
       <artifactId>truth</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <scope>test</scope>
+    </dependency>
+
 
     <!--Microbenchmarking-->
     <dependency>
