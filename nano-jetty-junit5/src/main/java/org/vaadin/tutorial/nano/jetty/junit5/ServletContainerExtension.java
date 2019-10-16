@@ -11,7 +11,6 @@ public class ServletContainerExtension
 
   @Override
   public void beforeEach(ExtensionContext ctx) throws Exception {
-//    Stagemonitor.init();
     final CoreUIService uiService = new CoreUIService();
     uiService.startup();
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)

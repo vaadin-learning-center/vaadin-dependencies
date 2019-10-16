@@ -21,8 +21,10 @@ Add first to repository coordinates to your **pom.xml**
 ```xml
   <repositories>
     <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
+      <name>bintray</name>
+      <id>bintray-vaadin-tutorials-maven</id>
+      <url>https://dl.bintray.com/vaadin-tutorials/maven</url>
+      <snapshots><enabled>false</enabled></snapshots>
     </repository>
   </repositories>
 ```
@@ -67,6 +69,11 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 
 ### NEXT
 * TBD
+
+### 2.0.0
+* changed structure
+* switched to bintray repos
+
 
 ### 1.0.6
 * added java-faker to scope test

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>vaadin-dependencies</artifactId>
-    <groupId>org.vaadin</groupId>
+    <groupId>org.vaadin-tutorials</groupId>
     <version>0.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -13,13 +13,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.vaadin</groupId>
+      <groupId>org.vaadin-tutorials</groupId>
       <artifactId>vaadin-dependencies-core</artifactId>
       <scope>compile</scope>
       
     </dependency>
     <dependency>
-      <groupId>org.vaadin</groupId>
+      <groupId>org.vaadin-tutorials</groupId>
       <artifactId>vaadin-dependencies-nano-jetty</artifactId>
       <scope>compile</scope>
     </dependency>

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>vaadin-dependencies</artifactId>
-    <groupId>org.vaadin</groupId>
+    <groupId>org.vaadin-tutorials</groupId>
     <version>0.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -23,7 +23,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.vaadin</groupId>
+      <groupId>org.vaadin-tutorials</groupId>
       <artifactId>vaadin-dependencies-core</artifactId>
     </dependency>
 
@@ -67,29 +67,6 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
     </dependency>
-
-<!--    &lt;!&ndash;    APM Stagemonitor Start &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.stagemonitor</groupId>-->
-<!--      <artifactId>stagemonitor-web-servlet</artifactId>-->
-<!--      <version>${stagemonitor.version}</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.stagemonitor</groupId>-->
-<!--      <artifactId>stagemonitor-tracing</artifactId>-->
-<!--      <version>${stagemonitor.version}</version>-->
-<!--    </dependency>-->
-    <!--    <dependency>-->
-    <!--      <groupId>org.stagemonitor</groupId>-->
-    <!--      <artifactId>stagemonitor-tracing-zipkin</artifactId>-->
-    <!--      <version>${stagemonitor.version}</version>-->
-    <!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>net.bytebuddy</groupId>-->
-<!--      <artifactId>byte-buddy</artifactId>-->
-<!--      <version>${byte-buddy.version}</version>-->
-<!--    </dependency>-->
-    <!--    APM Stagemonitor End -->
 
 
   </dependencies>
