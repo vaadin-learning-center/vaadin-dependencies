@@ -1,4 +1,4 @@
-package org.vaadin.tutorial.nano.jetty.junit5;
+package org.vaadin.tutorial.nano.junit5;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ParameterContext;

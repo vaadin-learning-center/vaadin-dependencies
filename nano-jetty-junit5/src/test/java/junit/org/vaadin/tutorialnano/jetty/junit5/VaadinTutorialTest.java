@@ -4,8 +4,8 @@ import demo.DemoAppServlet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.vaadin.tutorial.nano.jetty.junit5.VaadinTutorial;
-import org.vaadin.tutorial.nano.jetty.junit5.WebDriverParameterResolver.GenericPageObject;
+import org.vaadin.tutorial.nano.junit5.VaadinTutorial;
+import org.vaadin.tutorial.nano.junit5.WebDriverParameterResolver.GenericPageObject;
 
 @VaadinTutorial
 public class VaadinTutorialTest {

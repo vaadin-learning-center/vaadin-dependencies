@@ -1,4 +1,4 @@
-package org.vaadin.tutorial.nano.jetty.junit5;
+package org.vaadin.tutorial.nano.junit5;
 
 import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
 import org.junit.jupiter.api.extension.ExtendWith;

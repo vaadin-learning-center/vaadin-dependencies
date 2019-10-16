@@ -18,9 +18,10 @@
       <scope>compile</scope>
       
     </dependency>
+
     <dependency>
-      <groupId>org.vaadin-tutorials</groupId>
-      <artifactId>vaadin-dependencies-nano-jetty</artifactId>
+      <groupId>org.rapidpm.vaadin</groupId>
+      <artifactId>nano-vaadin-jetty</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>

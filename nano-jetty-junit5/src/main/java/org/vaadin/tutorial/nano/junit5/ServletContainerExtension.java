@@ -1,9 +1,9 @@
-package org.vaadin.tutorial.nano.jetty.junit5;
+package org.vaadin.tutorial.nano.junit5;
 
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-import org.vaadin.tutorial.nano.jetty.CoreUIService;
+import org.rapidpm.vaadin.nano.CoreUIServiceJava;
 
 
 public class ServletContainerExtension
@@ -11,17 +11,17 @@ public class ServletContainerExtension
 
   @Override
   public void beforeEach(ExtensionContext ctx) throws Exception {
-    final CoreUIService uiService = new CoreUIService();
+    final CoreUIServiceJava uiService = new CoreUIServiceJava();
     uiService.startup();
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)
-       .put(CoreUIService.class.getSimpleName(), uiService);
+       .put(CoreUIServiceJava.class.getSimpleName(), uiService);
   }
 
 
   @Override
   public void afterEach(ExtensionContext ctx) throws Exception {
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)
-       .get(CoreUIService.class.getSimpleName(), CoreUIService.class).jetty.ifPresent(server -> {
+       .get(CoreUIServiceJava.class.getSimpleName(), CoreUIServiceJava.class).jetty.ifPresent(server -> {
       try {
         server.stop();
       } catch (Exception e) {
