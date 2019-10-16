@@ -73,6 +73,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### 2.0.0
 * changed structure
 * switched to bintray repos
+* using nano-vaadin for jetty and undertow
 
 
 ### 1.0.6

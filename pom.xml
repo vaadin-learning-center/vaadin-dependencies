@@ -205,14 +205,16 @@
         <artifactId>vaadin-dependencies-core</artifactId>
         <version>0.0.0-SNAPSHOT</version>
       </dependency>
-      <dependency>
-        <groupId>org.vaadin-tutorials</groupId>
-        <artifactId>vaadin-dependencies-nano-jetty</artifactId>
-        <version>0.0.0-SNAPSHOT</version>
-      </dependency>
+
       <dependency>
         <groupId>org.vaadin-tutorials</groupId>
         <artifactId>vaadin-dependencies-nano-jetty-junit5</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.vaadin-tutorials</groupId>
+        <artifactId>vaadin-dependencies-nano-undertow-junit5</artifactId>
         <version>0.0.0-SNAPSHOT</version>
       </dependency>
 
@@ -354,6 +356,17 @@
         <version>3.0.2</version>
       </dependency>
 
+      <!--Nano Vaadin-->
+      <dependency>
+        <groupId>org.rapidpm.vaadin</groupId>
+        <artifactId>nano-vaadin-undertow</artifactId>
+        <version>01.00.02-RPM</version>
+      </dependency>
+      <dependency>
+        <groupId>org.rapidpm.vaadin</groupId>
+        <artifactId>nano-vaadin-jetty</artifactId>
+        <version>01.00.01-RPM</version>
+      </dependency>
 
       <!--Testcontainers-->
       <dependency>
@@ -534,7 +547,7 @@
 
   <modules>
     <module>core</module>
-    <module>nano-jetty</module>
+    <module>nano-undertow-junit5</module>
     <module>nano-jetty-junit5</module>
     <module>vaadin-v08</module>
     <module>vaadin-v10</module>
