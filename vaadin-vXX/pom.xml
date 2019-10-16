@@ -21,7 +21,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>vaadin-dependencies</artifactId>
-    <groupId>org.vaadin-tutorials</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <version>0.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -106,7 +106,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.vaadin-tutorials</groupId>
+      <groupId>org.vaadintutorials</groupId>
       <artifactId>vaadin-dependencies-core</artifactId>
     </dependency>
     <dependency>
@@ -132,7 +132,7 @@
 
     <!--    TDD-->
     <dependency>
-      <groupId>org.vaadin-tutorials</groupId>
+      <groupId>org.vaadintutorials</groupId>
       <artifactId>vaadin-dependencies-nano-undertow-junit5</artifactId>
     </dependency>
 

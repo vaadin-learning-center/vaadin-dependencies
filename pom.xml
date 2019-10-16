@@ -22,7 +22,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.vaadin-tutorials</groupId>
+  <groupId>org.vaadintutorials</groupId>
   <artifactId>vaadin-dependencies</artifactId>
   <packaging>pom</packaging>
 
@@ -98,7 +98,7 @@
     <log4j-api.version>2.12.1</log4j-api.version>
 
     <jacoco.version>0.8.4</jacoco.version>
-    <pitest.version>1.4.9</pitest.version>
+    <pitest.version>1.4.10</pitest.version>
     <pitest-junit5-plugin.version>0.9</pitest-junit5-plugin.version>
     <pitest-prod-classes>org.vaadin.*</pitest-prod-classes>
     <pitest-test-classes>junit.org.vaadin*</pitest-test-classes>
@@ -106,14 +106,14 @@
     <jmh.version>1.21</jmh.version>
 
     <!--TDD jUnit5-->
-    <junit.jupiter.version>5.5.1</junit.jupiter.version>
-    <junit.platform.version>1.5.1</junit.platform.version>
+    <junit.jupiter.version>5.5.2</junit.jupiter.version>
+    <junit.platform.version>1.5.2</junit.platform.version>
     <junit-platform-maven-plugin.version>1.0.0-M5</junit-platform-maven-plugin.version>
 
     <opentracing-api.version>0.33.0</opentracing-api.version>
     <asm.version>7.1</asm.version>
 
-    <testcontainers.version>1.12.1</testcontainers.version>
+    <testcontainers.version>1.12.2</testcontainers.version>
 
 
     <vaadin-v08.version>8.8.6</vaadin-v08.version>
@@ -201,19 +201,19 @@
 
       <!--      Project modules-->
       <dependency>
-        <groupId>org.vaadin-tutorials</groupId>
+        <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-core</artifactId>
         <version>0.0.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
-        <groupId>org.vaadin-tutorials</groupId>
+        <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-nano-jetty-junit5</artifactId>
         <version>0.0.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
-        <groupId>org.vaadin-tutorials</groupId>
+        <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-nano-undertow-junit5</artifactId>
         <version>0.0.0-SNAPSHOT</version>
       </dependency>
@@ -235,13 +235,13 @@
       <dependency>
         <groupId>net.oneandone.reflections8</groupId>
         <artifactId>reflections8</artifactId>
-        <version>0.11.5</version>
+        <version>0.11.6</version>
       </dependency>
 
       <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
-        <version>3.25.0-GA</version>
+        <version>3.26.0-GA</version>
       </dependency>
 
       <!--      generic tooling-->
@@ -282,7 +282,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
-        <version>1.18</version>
+        <version>1.19</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -297,17 +297,17 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-vfs2</artifactId>
-        <version>2.4</version>
+        <version>2.4.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
-        <version>4.5.9</version>
+        <version>4.5.10</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>fluent-hc</artifactId>
-        <version>4.5.9</version>
+        <version>4.5.10</version>
       </dependency>
 
 
@@ -341,7 +341,7 @@
       <dependency>
         <groupId>com.zaxxer</groupId>
         <artifactId>HikariCP</artifactId>
-        <version>3.3.1</version>
+        <version>3.4.1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -472,7 +472,7 @@
       <dependency>
         <groupId>io.gatling.highcharts</groupId>
         <artifactId>gatling-charts-highcharts</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.1</version>
         <scope>test</scope>
       </dependency>
       <!--tdd-->

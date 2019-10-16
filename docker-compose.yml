@@ -19,8 +19,8 @@ version: '3.5'
 services:
   deploy:
     image: svenruppert/maven-3.6.1-adopt:1.8.212-04
-    container_name: deploy
-    hostname: deploy
+    container_name: deploy-vaadin-dependencies
+    hostname: deploy-vaadin-dependencies
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - $PWD/:/usr/src/mymaven

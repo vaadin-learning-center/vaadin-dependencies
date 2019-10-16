@@ -21,7 +21,7 @@ public class ServletContainerExtension
   @Override
   public void afterEach(ExtensionContext ctx) throws Exception {
     ctx.getStore(ExtensionContext.Namespace.GLOBAL)
-       .get(CoreUIServiceJava.class.getSimpleName(), CoreUIServiceJava.class).jetty.ifPresent(server -> {
+       .get(CoreUIServiceJava.class.getSimpleName(), CoreUIServiceJava.class).undertow.ifPresent(server -> {
       try {
         server.stop();
       } catch (Exception e) {
