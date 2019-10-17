@@ -13,9 +13,7 @@ This project is a minimized version of
 [https://github.com/RapidPM/rapidpm-dependencies](https://github.com/RapidPM/rapidpm-dependencies)
 
 ## How to use
-The dependency is distributed via 
-jitpack [https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/](https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/)
-
+The dependency is distributed via Bintray.
 Add first to repository coordinates to your **pom.xml**
 
 ```xml
