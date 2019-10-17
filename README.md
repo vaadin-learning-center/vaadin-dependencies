@@ -35,7 +35,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V8 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v08</artifactId>
     <version>XXXX</version>
   </parent>
@@ -43,7 +43,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V10 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v10</artifactId>
     <version>XXXX</version>
   </parent>
@@ -51,7 +51,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V14 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v14</artifactId>
     <version>XXXX</version>
   </parent>
@@ -59,7 +59,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### Current 
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-vXX</artifactId>
     <version>XXXX</version>
   </parent>
