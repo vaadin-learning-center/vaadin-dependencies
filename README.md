@@ -1,8 +1,6 @@
 #Parent POM for Vaadin Tutorials
 
 ## Current state
-[![](https://jitpack.io/v/vaadin-learning-center/vaadin-dependencies.svg)](https://jitpack.io/#vaadin-learning-center/vaadin-dependencies)
-[![](https://jitci.com/gh/vaadin-learning-center/vaadin-dependencies/svg)](https://jitci.com/gh/vaadin-learning-center/vaadin-dependencies)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
@@ -13,16 +11,16 @@ This project is a minimized version of
 [https://github.com/RapidPM/rapidpm-dependencies](https://github.com/RapidPM/rapidpm-dependencies)
 
 ## How to use
-The dependency is distributed via 
-jitpack [https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/](https://jitpack.io/#vaadin-learning-center/vaadin-dependencies/)
-
+The dependency is distributed via Bintray.
 Add first to repository coordinates to your **pom.xml**
 
 ```xml
   <repositories>
     <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
+      <name>bintray</name>
+      <id>bintray-vaadin-tutorials-maven</id>
+      <url>https://dl.bintray.com/vaadin-tutorials/maven</url>
+      <snapshots><enabled>false</enabled></snapshots>
     </repository>
   </repositories>
 ```
@@ -33,7 +31,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V8 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v08</artifactId>
     <version>XXXX</version>
   </parent>
@@ -41,7 +39,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V10 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v10</artifactId>
     <version>XXXX</version>
   </parent>
@@ -49,7 +47,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### V14 (LTS)
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-v14</artifactId>
     <version>XXXX</version>
   </parent>
@@ -57,7 +55,7 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 ### Current 
 ```xml
   <parent>
-    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <groupId>org.vaadintutorials</groupId>
     <artifactId>vaadin-dependencies-vXX</artifactId>
     <version>XXXX</version>
   </parent>
@@ -67,6 +65,12 @@ This project supports all LTS versions up from Vaadin8 and the current version.
 
 ### NEXT
 * TBD
+
+### 2.0.0
+* changed structure
+* switched to bintray repos
+* using nano-vaadin for jetty and undertow
+
 
 ### 1.0.6
 * added java-faker to scope test

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2013 Sven Ruppert (sven.ruppert@gmail.com)
+    Copyright © 2019 Vaadin - Marketing Team - Developer Relations (devrel@vaadin.com)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>vaadin-dependencies</artifactId>
-    <groupId>org.vaadin</groupId>
-    <version>0.0.0-SNAPSHOT</version>
+    <groupId>org.vaadintutorials</groupId>
+    <version>2.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright © 2013 Sven Ruppert (sven.ruppert@gmail.com)
+# Copyright © 2019 Vaadin - Marketing Team - Developer Relations (devrel@vaadin.com)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,5 +15,5 @@
 # limitations under the License.
 #
 
-docker rm deploy
+docker rm deploy-vaadin-dependencies
 docker-compose up

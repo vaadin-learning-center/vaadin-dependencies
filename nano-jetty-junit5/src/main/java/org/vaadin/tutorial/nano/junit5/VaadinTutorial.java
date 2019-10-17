@@ -13,12 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-module rapidpm.dependencies.core {
-  exports org.rapidpm.dependencies.core.basepattern.builder;
-  exports org.rapidpm.dependencies.core.fs;
-  exports org.rapidpm.dependencies.core.net;
-  exports org.rapidpm.dependencies.core.reflections;
-  exports org.rapidpm.dependencies.core.stream;
-  exports org.rapidpm.dependencies.core.system;
+package org.vaadin.tutorial.nano.junit5;
 
-}
+import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import java.lang.annotation.*;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
+@ExtendWith(ServletContainerExtension.class)
+@ExtendWith(WebdriverExtension.class)
+@ExtendWith(WebDriverParameterResolver.class)
+@EnabledIfEnvironmentVariable(named = "TESTBENCH", matches = "on")
+public @interface VaadinTutorial { }

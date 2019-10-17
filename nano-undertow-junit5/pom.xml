@@ -26,19 +26,19 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>vaadin-dependencies-nano-jetty-junit5</artifactId>
+  <artifactId>vaadin-dependencies-nano-undertow-junit5</artifactId>
 
   <dependencies>
     <dependency>
       <groupId>org.vaadintutorials</groupId>
       <artifactId>vaadin-dependencies-core</artifactId>
       <scope>compile</scope>
-      
+
     </dependency>
 
     <dependency>
       <groupId>org.rapidpm.vaadin</groupId>
-      <artifactId>nano-vaadin-jetty</artifactId>
+      <artifactId>nano-vaadin-undertow</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -74,8 +74,6 @@
       <version>3.141.59</version>
       <scope>compile</scope>
     </dependency>
-
   </dependencies>
-
 
 </project>
