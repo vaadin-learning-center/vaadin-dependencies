@@ -28,7 +28,7 @@
 
   <!--  development version ongoing, for releases see github/jitpack-->
   <!--  https://github.com/vaadin-learning-center/vaadin-dependencies/releases-->
-  <version>2.0.0</version>
+  <version>2.0.1-SNAPSHOT</version>
 
   <inceptionYear>2019</inceptionYear>
   <organization>
@@ -203,19 +203,19 @@
       <dependency>
         <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-core</artifactId>
-        <version>2.0.0</version>
+        <version>2.0.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-nano-jetty-junit5</artifactId>
-        <version>2.0.0</version>
+        <version>2.0.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.vaadintutorials</groupId>
         <artifactId>vaadin-dependencies-nano-undertow-junit5</artifactId>
-        <version>2.0.0</version>
+        <version>2.0.1-SNAPSHOT</version>
       </dependency>
 
 
